@@ -1,0 +1,4 @@
+---- database settings----
+CREATE USER blog_admin WITH PASSWORD 'blog_root';
+CREATE DATABASE blog_db OWNER 'blog_admin';
+          -----------
