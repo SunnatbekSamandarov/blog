@@ -47,7 +47,7 @@
 
       <div class="profile">
         <img src="{%static 'assets/img/myfoto2.jpg'%}" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Sunnatbek Samandarov</a></h1>
+        <h1 class="text-light"><a href="{% url 'home' %}">Sunnatbek Samandarov</a></h1>
         <div class="social-links mt-3 text-center">
           <a href="https://t.me/Sunnatbek_Samandarov" class="telegram"><i class="bx bxl-telegram"></i></a>
           <a href="https://ne-np.facebook.com/sunnatbek.samandarov" class="facebook"><i class="bx bxl-facebook"></i></a>
@@ -72,7 +72,7 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
-      <h1>Sunnatbek</h1>
+      <h1>Hi There !</h1>
       <p>I'm <span class="typed" data-typed-items=" Developer, Freelancer"></span></p>
     </div>
   </section><!-- End Hero -->
@@ -252,7 +252,7 @@
               <p><em>Software Engineer Backend developer and Freelancer.Has good knowlege and hands-on experience in developing web sites using PYTHON,DJANGO.</em></p>
               <ul>
                 <li>(+998) 94-562-64-46</li>
-                <li>sunnatbeksamadarov11@gmail.com</li>
+                <li>sunnatbeksamandarov11@gmail.com</li>
               </ul>
             </div>
             <h3 class="resume-title">Education</h3>
@@ -276,8 +276,8 @@
               <ul>
                 <li>I Have Studied For 2 Years In One Of The Most Prestigious Lyceum In Uzbekistan.</li>
                 <li>Then Have Studied For 6 Months Web Developing AT Proneo IT Education Centre. </li>
-                <li>There Are 6 Developer In Our Freelancer Group And We Have Been Studied At The Same Lyceum. </li>
-                <li>Nowadays We Practise To Make Websayt Togather And Competeting With Each Other</li>
+                <li>There Are 7 Developers In Our  Group And We Have Been Studied At The Same Lyceum. </li>
+                <li>Nowadays We are Practicing To Make Website Togather And Competeting With Each Other</li>
               </ul>
             </div>
 
@@ -476,6 +476,23 @@ Mirshod Murodov, a freelance Uzbek Frotend developer. Formerly based in Bukhara,
                 <h4>Frontend Developer </h4>
               </div>
             </div><!-- End testimonial item -->
+             <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+
+Abdusamad Malikov, a freelance Uzbek Backend developer. Formerly based in Bukhara,  Uzbekistan, studied at Karakul Academic Lyceum, and now getting higher education at Ajou university in Tashkent. English profiency is Ielts 6.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                    <br>
+                     for connect    <a href="https://t.me/ok_no_thanks" class="telegram">✍🏻<i class="bx bxl-telegram"></i></a>
+                </p>
+                <img src="{%static 'assets/img/testimonials/abdusamad.jpg'%}" class="testimonial-img" alt="">
+                <h3>Abdusamad Malikov</h3>
+                <h4>Backend Developer </h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+
 
             <div class="swiper-slide">
               <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
@@ -488,7 +505,7 @@ Ulugbek Temirov, a freelance Uzbek Frontend developer. Formerly based in Bukhara
                 </p>
                 <img src="{%static 'assets/img/testimonials/Ulugbek1.jpg'%}" class="testimonial-img" alt="">
                 <h3>Ulug'bek Temirov</h3>
-                <h4>Backend Developer</h4>
+                <h4>Frontend Developer</h4>
               </div>
             </div><!-- End testimonial item -->
              <div class="swiper-slide">
@@ -587,7 +604,7 @@ Sukhrob Arashov , a freelance Uzbek designer. Formerly based in Bukhara,  Uzbeki
             <form action="{% url  'home' %}" method="post" role="form" >{% csrf_token %}
 
               <div class="row">
-                  {{ forms }}
+                  {{ forms.as_table }}
 
                    </div><br>
                   <div class="text-center"><button type="submit">Send Message</button></div>
